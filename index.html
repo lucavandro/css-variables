@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili css</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+
+        function attivaDark(){
+            // Se la classe del body esiste ed è 'dark'
+            if(document.body.className == 'dark'){
+                // Se è vero, la tolgo
+                document.body.className = "";
+            } else{
+                // Altrimenti aggiungo al body la classe dark
+                document.body.className="dark";
+            }
+            
+        }
+        // Prendo il documento 
+        // aggiungo una sentinella sull'evento di click
+        // Quando si verifica il click svolge una funzione
+        document.addEventListener('click', attivaDark)
+    </script>
+</head>
+<body>
+    <h1>Le variabili in CSS</h1>
+    <h2>Sono una cosa meravigliosa</h2>
+</body>
+</html>
